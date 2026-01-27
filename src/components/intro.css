@@ -8,13 +8,13 @@
   z-index: 9999;
 }
 
-.logo {
+.intro .logo {
   position: relative;
   width: 420px;
   height: 420px;
 }
 
-.logo img {
+.intro .logo img {
   position: absolute;
   inset: 0;
   margin: auto;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "aos/dist/aos.css";
 import "./VideoGrid.css";
 
 interface VideoItem {
@@ -61,30 +62,42 @@ export default function VideoGrid() {
   return (
     <section className="video-grid-section">
       <div className="container">
-        <h2 className="video-grid-title">
+        <h2
+          className="video-grid-title"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-easing="ease-out"
+        >
           Speciality Health Campaigns Longevity Lounge
         </h2>
 
         <div className="video-grid">
-          {videos.map((video) => (
+          {videos.map((video, index) => (
             <div
               key={video.id}
               className="video-card"
               onClick={() => setActiveVideo(video)}
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay={index * 100}
+              data-aos-easing="ease-out"
+              data-aos-once="true"
             >
-              <img src={video.poster} alt="Video thumbnail" />
+              <img src={video.poster} alt="Video thumbnail" loading="lazy" />
               <div className="play-button" />
             </div>
           ))}
         </div>
       </div>
 
-      {/* VIDEO MODAL */}
       {activeVideo && (
         <div className="video-modal" onClick={() => setActiveVideo(null)}>
           <div
             className="video-modal-content"
             onClick={(e) => e.stopPropagation()}
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
           >
             <button
               className="video-close"
