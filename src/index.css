@@ -1358,6 +1358,8 @@ body {
   text-align: center;
   overflow: hidden;
   border-top: 1.3px solid #f6bf7f;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* LEFT CURVE */
