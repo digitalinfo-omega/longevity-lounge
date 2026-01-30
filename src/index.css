@@ -1404,6 +1404,26 @@ body {
   color: #f6bf7f;
 }
 
+.nav-cta .follow-us .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-cta .follow-us .social-icons i {
+  color: #f6bf7f;
+  font-size: 24px;
+}
+
+.nav-cta .follow-us .social-icons i:hover {
+  cursor: pointer;
+  color: #f19429;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-cta .follow-us .social-icons a:hover {
+  background-color: #ffffff;
+}
+
 .footer-section .follow-us .social-icons {
   display: flex;
   gap: 10px;
