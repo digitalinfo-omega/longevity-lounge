@@ -306,9 +306,13 @@ body {
   cursor: pointer;
 }
 
+.hero-video-section {
+  position: relative;
+}
+
 .video-tap-hint {
   position: absolute;
-  bottom: 20px;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -1389,34 +1393,34 @@ body {
   color: #d9d9d9;
 }
 
-.follow-us {
+.footer-section .follow-us {
   margin-top: 20px;
 }
 
-.follow-us h5 {
+.footer-section .follow-us h5 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #f6bf7f;
 }
 
-.follow-us .social-icons {
+.footer-section .follow-us .social-icons {
   display: flex;
   gap: 10px;
 }
 
-.follow-us .social-icons i {
+.footer-section .follow-us .social-icons i {
   color: #f6bf7f;
   font-size: 24px;
 }
 
-.follow-us .social-icons i:hover {
+.footer-section .follow-us .social-icons i:hover {
   cursor: pointer;
   color: #f19429;
   transition: color 0.3s ease-in-out;
 }
 
-.follow-us .social-icons a:hover {
+.footer-section .follow-us .social-icons a:hover {
   background-color: #ffffff;
 }
 
@@ -1922,4 +1926,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .custom-select {
   width: 100%;
   padding: 12px 42px 12px 12px; /* extra right padding */
+}
+
+.unmute-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
 }

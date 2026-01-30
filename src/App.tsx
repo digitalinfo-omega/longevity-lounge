@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./components/intro.css";
 import IntroAnimation from "./components/IntroAnimation";
+import MobileBottomBar from "./components/MobileBottomBar";
 
 const App = () => {
   const [showIntro, setShowIntro] = useState(() => {
@@ -37,6 +38,7 @@ const App = () => {
       </Routes>
 
       <Footer />
+      <MobileBottomBar />
 
       <div className="copyright">
         <p>© Copyright 2025 - Longevity Lounge All Rights Reserved.</p>

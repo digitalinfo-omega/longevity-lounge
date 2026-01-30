@@ -161,7 +161,7 @@
     color: #fff;
     text-align: center;
   }
-  .follow-us .social-icons {
+  .nav-cta .follow-us .social-icons {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -553,6 +553,11 @@
   .ps-grid {
     grid-template-columns: 1fr;
   }
+
+  .video-tap-hint {
+    left: 40%;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 550px) {
@@ -700,7 +705,8 @@
 @media (max-width: 379px) {
   .hj-pill {
     align-items: start;
-    flex-direction: column;
+    /* flex-direction: column; */
+    padding: 15px 0;
   }
   .hj-right {
     max-width: 90%;
